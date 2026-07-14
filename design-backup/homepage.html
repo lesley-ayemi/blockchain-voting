@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Voting System - Homepage</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>E-Voting System</h1>
+    </header>
+<center>
+    <div class="container">
+        <div class="nav-tabs">
+            <button data-tab="candidates">Candidates</button>
+            &nbsp;
+            <button data-tab="results">Poll Results</button>
+        </div>
+
+        <div id="candidates" class="tab-content active">
+            <h1>Vote for Your Candidate</h1>
+            <p id="accountAddress">Logged in as: <span></span></p>
+            <div id="candidatesList"></div>
+        </div>
+
+        <div id="results" class="tab-content">
+            <h2>Poll Results</h2>
+            <canvas id="resultsChart" width="400" height="200"></canvas>
+        </div>
+    </div>
+</center>
+
+    <footer style="position:relative;margin-top:450px;width:100%">
+        <p>&copy; 2024 E-Voting System. All rights reserved.</p>
+    </footer>
+
+    <div class="alert" id="alertMessage"></div>
+
+    <script src="js/homepage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/chart.js"></script>
+</body>
+
+</html>
